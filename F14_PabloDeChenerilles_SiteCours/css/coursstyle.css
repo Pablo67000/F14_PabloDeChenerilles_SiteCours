@@ -1,0 +1,36 @@
+body
+{
+	background-color: #004F6C;
+	color: white;
+	font-size: 15px;
+	font-family: "Arial";
+}
+/*Le style du footer*/
+.piedpage
+{
+	background-color: #004F6C;
+	color: white;
+	font-size: 13px;
+	font-family: "Arial";
+}
+/* Je rajoute un style supplémentaire pour les liens, afin que la couleur violette soit plus voyante (contraste avec fond du site)*/
+.link
+{
+	background-color: #018BD1;
+}
+.core
+{
+	background-color: #004F6C;
+	color: white;
+	font-size: 15px;
+	font-family: "Arial";
+}
+.entete
+{
+	background-color:grey;
+	font-size:75px;
+	font-family:"Arial";
+	font-style:italic;
+	color: white;
+	font-weight:bold;
+}

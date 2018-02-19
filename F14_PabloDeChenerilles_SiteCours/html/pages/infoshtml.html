@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../../css/coursstyle.css">
+		<meta charset="utf-8"/>
+		<title>Cours Web</title>
+	</head>
+	<header>
+		<a href="../accueilcours.html" title=PageAccueil><div class="entete">COURS WEB</div></a>
+	</header>
+	<body>
+		<div class="core">
+			<h1>Page infos HTML</h1>
+
+			<h2>Pour revenir sur la page d'accueil du site, cliquez sur "COURS WEB" en haut à gauche</h2>
+			<br/>
+			Balises<br/>
+			HTML langage de balise, repéré par &lt; et &gt;.<br/>
+			<br/>
+			Balises paires<br/>
+			S'ouvrent, contiennent texte, et se ferment plus loin:<br/>
+			&lt;titre&gt;Ceci est un titre&lt;/titre&gt;<br/>
+			<br/>
+			Balises orphelines<br/>
+			Servent le plus souvent à insérer un élément à un endroit précis (ex:image). Pas nécessaire de délimiter le début et la fin de l'image<br/>
+			on veut juste dire à l'ordinateur "insère une image ici"<br/>
+			s'écrit:<br/>
+			&lt;image/&gt; ou &lt;image&gt; mais on recommande le slash pour bien différencier des balises paires.<br/>
+			<br/>
+
+			Attributs<br/>
+			<br/>
+			Attributs = options des balises. Viennent compléter pour donner des infos suppl. Se place après nom de balise ouvrante et a le plus souvent une valeur,<br/>
+			comme ceci:<br/>
+			&lt;balise attribut="valeur"&gt;<br/>
+			Ex: &lt;image nom="photo.jpg"/&gt;, nom de l'image à afficher.<br/>
+			<br/>
+			Dans le cas de balise paire, on ne met les attributs QUE dans balise ouvrante, pas dans la fermante.<br/>
+			<br/>
+			Significations premières balises:<br/>
+			<br/>
+			Le doctype: Pas une vraie balise de par sa syntaxe, indispensable car elle indique que c'est page web HTML écrit en HTML5.<br/>
+			La balise &lt;/html&gt;: Balise principale du code. Elle englobe tout le contenu de votre page. La balise fermante est à la fin.<br/>
+			L'en-tête &lt;head&gt;: info générales sur la page comme son titre, l'encodage, etc.<br/>
+			Le corps &lt;body&gt;:<br/>
+			L'encodage: ex, UTF-8, save with encoding<br/>
+			Le titre principale de la page &lt;title&gt;: titre de la page, probablement élément le plus important! Toute page doit avoir un titre qui décrit ce qu'il contient. Conseiller de garder titre court, - 100 carac de en général.<br/>
+			Titre s'affiche sur onglet.<br/>
+			Commentaire: texte visible uniquement sous code source<br/>
+			code source: f12 ou clique droit "afficher code source de la page"<br/>
+			Paragraphe: &lt;p&gt; Début paragraphe &lt;/p&gt; Fin paragraphe. Doit être saisi entre balise &lt;body&gt; &lt;/body&gt;<br/>
+			Insérer saut de ligne avec balise impaire &lt;br/&gt;, nouveau paragraphe induit un saut de ligne<br/>
+			On peut mettre plusieurs &lt;br/&gt; d'affilés, mais on ne fonctionne pas comme ça, on gère les espaces avec CSS.
+			&lt;img/&gt; balise impaire permettant d'insérer une image.<br/>
+			Les titres: ne pas confondre avc &lt;title&gt;, six balises de titres différentes:<br/>
+			&lt;h1&gt;&lt;/h1&gt;: signifie titre très important<br/>
+			&lt;h2&gt;&lt;/h2&gt;: titre important<br/>
+			&lt;h3&gt;&lt;/h3&gt;: un peu moins important<br/>
+			&lt;h4&gt;&lt;/h4&gt;: etc<br/>
+			&lt;h5&gt;&lt;/h5&gt;:<br/>
+			&lt;h6&gt;&lt;/h6&gt;:<br/>
+			<br/>
+			Balise &lt;em&gt;Sert à mettre un texte en italique&lt;/em&gt;<br/>
+			Balise &lt;strong&gt;Sert à mettre un texte en gras&lt;/strong&gt;<br/>
+			Balise &lt;mark&gt;Sert à mettre un texte en surligné&lt;/mark&gt;<br/>
+			<br/>
+			Ces 3 balises améliorent le référencement<br/>
+			<br/>
+			Les listes :<br/>
+			Permettent d'organiser du texte.<br/>
+			<br/>
+			Les listes non ordonnées ou listes à puces :<br/>
+			balise paire &lt;ul&gt;&lt;/ul&gt; comme unordered list<br/>
+			chaque élément de la liste est un item ; Se servir des balises &lt;li&gt;&lt;/li&gt;<br/>
+			Li comme List Item<br/>
+			<br/>
+			Pour créer des listes plus complexes :<br/>
+			imbriquer des listes à puces (créer une liste à puces dans une liste à puces). =&gt;<br/>
+			Ouvrir une seconde balise &lt;ul&gt;à l'intérieur d'un élément &lt;li&gt;&lt;/li&gt;<br/>
+			Les listes ordonnées ou listes numérotées ou encore énumérations<br/>
+			Remplacer les balises &lt;ul&gt;&lt;/ul&gt; par &lt;ol&gt;&lt;/ol&gt;<br/>
+			ol comme ordered list<br/>
+			<br/>
+			La liste de définitions, beaucoup plus rare<br/>
+			Fait intervenir balises &lt;dl&gt;(délimiter la liste),&lt;dt&gt; (terme à définir) et &lt;dd&gt; (délimiter déf de ce terme)<br/>
+			<br/>
+			Créer des liens<br/>
+			<br/>
+			Un site web est composé de plusieurs pages.<br/>
+			Un lien est un texte sur lequel on peut cliquer pour se rendre sur une autre page.<br/>
+			On peut faire un lien d'une page a.html vers une page b.html, on peut aussi faire un lien vers un autre site.
+			Balise &lt;a&gt; ; attribut href ; valeur de l'attribut est URL de la page ciblée.<br/>
+			<br/>
+			Lien vers un autre site<br/>
+			Ex : &lt;a href= « https://google.com »&gt;Google&lt;/a&gt;<br/>
+			Par défaut s'affiche en bleu souligné. Si page déjà ouverte, violet.<br/>
+			<br/>
+			Lien dans même dossier, ou dossier plus haut.<br/>
+			Dossier plus haut : &lt;a href="../troisiemepage.html"&gt;Page 3&lt;/a&gt;<br/>
+			<br/>
+			Un lien vers une ancre<br/>
+			<br/>
+			Une ancre est une sorte de point de repère que l'on peut mettre dans nos pages HTML lorsqu'elles sont très longues. Il peut alors être utile de faire un lien amenant plus bas dans la même page.<br/>
+			Pour créer une ancre il faut rajouter l'attribut id à une balise qui va alors servir de repère.<br/>
+			Ce peut être n'importe quelle balise, un titre par exemple. On l'utilise pour donner un nom à l'ancre.<br/>
+			Cela nous servira ensuite pour faire un lien vers cette ancre.<br/>
+			Par exemple : &lt;h2 id=« mon_ancre »&gt;Titre&lt;/h2&gt;<br/>
+			<br/>
+			Ensuite il suffit de créer un lien, mais l'attribut href contiendra un dièse # suivi du nom de l'ancre.<br/>
+			Ex : &lt;a href=«#mon_ancre »&gt;Aller vers l'ancre&lt;/a&gt;<br/>
+			<br/>
+			Normalement en cliquant ça nous amènera plus bas dans la même page.<br/>
+			<br/>
+			Lien vers une ancre située dans une autre page<br/>
+			Faire un lien qui ouvre une autre page ET qui amène directement à une ancre située plus bas sur cette page. Saisir le nom de la page, suivi d'un dièse (#), suivi du nom de l'ancre.<br/>
+			Par exemple : &lt;a href= «ancres.html#rollers »&gt;<br/>
+			<br/>
+			Un lien qui affiche une infobulle au survol<br/>
+			Ajouter l'attribut facultatif title<br/>
+			<br/>
+			Un lien qui ouvre une nouvelle fenêtre<br/>
+			Ajouter target = «_blank »<br/>
+			Selon la configuration du navigateur, la page s'affichera dans une nouvelle fenêtre ou un nouvel onglet. Vous ne pouvez pas choisir entre l'ouverture d'une nouvelle fenêtre ou d'un nouvel onglet. NB : Le visiteur lui-même peut décider s'il veut ouvrir le lien dans une nouvelle fenêtre.<br/>
+			Il fera Maj + Clic sur le lien pour ouvrir dans une nouvelle fenêtre ou Ctrl+Clic pour ouvrir dans un nouvel onglet.
+			Un lien pour envoyer un e-mail<br/>
+			&lt;a href= «mailto:lemail_cible »&gt;Envoyez un e-mail!&lt;/a&gt;<br/>
+			<br/>
+			Un lien pour télécharger un fichier<br/>
+			&lt;a href= « monfichier.zip »&gt;Télécharger le fichier&lt;/a&gt;<br/>
+			<br/>
+			Insérer image :<br/>
+			Dépends du format de l'image, sur internet toutes les images sont compressés.<br/>
+			Format JPG ou JPEG, peut supporter jusqu'à 16 millions de couleurs.<br/>
+			Format PNG (Portable Network Graphic) plus récent et plus performant des formats, l'utiliser des que possible. <br/>Avantage : l'image peut être transparente et on n'altère pas sa qualité. Existe en 2 versions : 8 bit, 256 couleurs, et 24 bits 16 millions de couleurs.<br/>
+			La compression du JPEG étant plus optimisé pour les photos, privilégier ce format.<br/>
+			Format GIF, image animée.<br/>
+			<br/>
+			Insérer une image :<br/>
+			Balise impaire &lt;img&gt; attribut src= «nomimage.jpg(ou png gif)»<br/>
+			attribut alt=<br/>
+			<br/>
+			La miniature cliquable :<br/>
+			Plus attrayant, plus d'indications sur la page.<br/>
+			Resize l'image sur resizeimage.net<br/>
+			exemple final : &lt;a href="C:\Users\Pablo\Documents\web\TP\html\naruto.jpg" target="_blank" title=AgrandirNaruto&gt;&lt;img src="C:\Users\Pablo\Documents\web\TP\html\narutoresize.jpg" alt="NarutoMiniature"/&gt;&lt;/a&gt;<br/>
+			<br/>
+			Les figures :<br/>
+			Elements qui complètent la page.<br/>
+			Ex : schéma, citation, image<br/>
+			Balise qui n'existait pas au départ, balise paire &lt;figure&gt;<br/>
+			&lt;figure&gt;<br/>
+			On peut y mettre une image. (Pas un attribut)<br/>
+			On peut ajouter une légende.<br/>
+			Balise paire<br/>
+			&lt;figcaption&gt;<br/>
+			Equivalent d'un title mais écrit différemment.<br/>
+			On crée une figure si l'image à du sens vis à vis du texte qui correspond. Va etre un plus par rapport au texte. SI cette image répond à ce besoin, on utilise la balise figure, sinon pas besoin, on fait un paragraphe et on met notre image dedans.<br/>
+			Notre figure n'est pas obligatoirement à mettre DANS le paragraphe qu'elle illustre.<br/>
+			Dans une figure on peut avoir plusieurs images. Donc on peut avoir plusieurs balises img.<br/>
+			<br/>
+			La balise<br/>
+			&lt;adress&gt;&lt;/adress&gt;Met en évidence les adresses coordonnées et URL. Cette balise peut être à deux<br/> endroits, à l'intérieur de &lt;body&gt;=représente les coordonnées du propriétaire du document<br/>
+			Dans un élément article=représente les coordonnées de l'auteur du document<br/>
+			On l'ajoute généralement en entête ou en bas d'une page web.<br/>
+			<br/>			 
+			La balise article (&lt;article&gt;&lt;/article&gt;) permet de structurer la page.<br/>
+			<br/>
+			La balise aside (&lt;aside&gt;&lt;/aside&gt;) sert à mettre du texte de coté, afin d’annoter une image ou un autre élément.<br/>
+			<br/>
+			La balise bouton (&lt;button&gt;&lt;/button&gt;) sert à rediriger vers une image ou un texte. Dans un formulaire, ce n’est pas un button, c’est un input.<br/>
+			<br/>
+			La balise form (&lt;form&gt;&lt;/form&gt;) Sert à créer un formulaire html 5<br/>
+			<br/>
+			Peut contenir un ou plusieurs des éléments suivants :<br/>
+			L'attribut selected<br/>
+			<br/>
+			&lt;form method=''get''/''post''<br/>
+				action=''cible.html''<br/>
+				name=''nom formulaire''&gt;<br/>
+			puis les inputs<br/>
+			&lt;/form&gt;<br/>
+			<br/>
+			attribut placeholder permet d'avoir une invite au sein de notre zone de texte<br/>
+			le type submit met un bouton cliquable qui permet d'envoyer<br/>
+			<br/>
+			Ceci est l'input d'email:&lt;input type="email" name="e-mail" placeholder="entrer son email"/&gt;&lt;br/&gt;
+			<br/>
+			Ceci est l'input de mot de passe:&lt;input type="password" name="joe dalton"/&gt;<br/>
+			<br/>
+			Ceci est l'input de radio:&lt;input type="radio" name="Sexe" value="1"/&gt;Homme<br/>
+						&lt;input type="radio" name="Sexe" value="2"/&gt;Femme<br/>
+						&lt;input type="radio" name="Sexe" value="3"/&gt;Autres<br/>
+			L'input checkbox sert à avoir un bouton checké.<br/>
+			Ex:&lt;input type=''checkbox'' name''<br/>
+			Propriété permettant de dire ou on veut aller. Autofocus<br/>
+			<br/>
+			Required=élément qui fait que tant que l'on ne l'a pas renseigné on ne peut pas passer à la suite (finir le formulaire)<br/>
+			<br/>
+			L'input de type date permet de remplir une date<br/>
+			<br/>
+			La balise pair &lt;fieldset&gt; permet d'englober plusieurs éléments en un, avec une présentation sympathique et pratique. Ex :<br/>
+			&lt;fieldset&gt;<br/>
+				&lt;legend&gt;message&lt;/legend&gt;<br/>
+				&lt;textarea&gt;message&lt;/textarea&gt;<br/>
+			&lt;/fieldset&gt;<br/>
+			<br/>
+			Balise &lt;hgroup&gt; permet de grouper des éléments de titre .<br/>
+			Ex :<br/>
+			&lt;hgroup&gt;<br/>
+			&lt;h1&gt;Les balises&lt;/h1&gt;<br/>
+			&lt;h2&gt;Les balises de formulaire&lt;/h2&gt;<br/>
+			&lt;/hgroup&gt;<br/>
+			<br/>
+			Balise pair  &lt;menu &gt; permet de faire une list tabulé, permettant un accès clair et rapide à différemment éléments (button)<br/>
+			Balise &lt;nav&gt; faire un groupe de lien de navigation qui se met tout à gauche<br/>
+			&lt;optgroupe&gt; option groupe<br/>
+			&lt;progress/&gt; Impaire, permet de montrer la progression des étapes<br/>
+			<br/>
+			&lt;header&gt; En tête<br/>
+			Sert à mettre par exemple un bandeau, un logo.<br/>
+			<br/>
+			&lt;footer&gt; Bas de page<br/>
+			mettre mail etc<br/>
+			<br/>
+			&lt;main&gt;&lt;/main&gt; on met le contenu principale<br/>
+			&lt;del&gt; permet de dire qu'un élément a été supprimer<br/>
+			<br/>
+			&lt;small&gt; afficher qqchose en petit<br/>
+			<br/>
+			&lt;dfn&gt; définition, baliser un terme qui va être défini.<br/>
+			<br/>
+			&lt;input&gt;color, affiche une palette de couleur<br/>
+			&lt;input&gt;search, affiche une barre de recherche<br/>
+			&lt;input&gt;file, affiche un button permettant de choisir un fichier à ouvrir<br/>
+			Si on veut envoyer plusieurs fichiers, rajouter multiple à l'input file<br/>
+			Pour que les fichiers puissent etre envoyés, rajouter « endtype=''multipart/form-data'' » dans le &lt;form&gt;
+			&lt;input&gt;image : bouton clickabble image, meme effet que submit<br/>
+			&lt;input&gt;reset : remet à zero<br/>
+			<br/>
+			balise &lt;table&gt; = tableau<br/>
+			&lt;th&gt; entete du tableau &lt;/th&gt;<br/>
+			&lt;tr&gt; ligne &lt;/tr&gt;<br/>
+			&lt;td&gt; data &lt;/td&gt;<br/>
+			&lt;/table&gt;<br/>
+			&lt;caption&gt; titre du tableau<br/>
+			&lt;caption-side&gt;<br/>
+			&lt;thead&gt;&lt;/thead&gt;<br/>
+			&lt;tbody&gt;&lt;/tbody&gt;<br/>
+			&lt;tfoot&gt;&lt;/tfoot&gt; (on le met avant le tbody meme si il s'affiche après)<br/>
+			<br/>
+			Insérer une video ou audio<br/>
+			<br/>
+			&lt;audio controls src= ''nomfichier.mp3''&gt;&lt;/audio&gt;<br/>
+			&lt;video controls src= ''nomfichier.mp4''&gt;&lt;/video&gt;<br/>
+		</div>
+	</body>
+</html>

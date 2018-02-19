@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../../css/coursstyle.css">
+		<meta charset="utf-8"/>
+		<title>Cours Web</title>
+	</head>
+	<header>
+		<a href="../accueilcours.html" title=PageAccueil><div class="entete">COURS WEB</div></a>
+	</header>
+	<body>
+		<div class="core">
+			<h1>Page infos CSS</h1>
+
+			<h2>Pour revenir sur la page d'accueil du site, cliquez sur "COURS WEB" en haut à gauche</h2>
+			<br/>
+					p<br/>
+			{<br/>
+				color : white;<br/>
+				font-size : 24px;<br/>
+			}<br/>
+			body<br/>
+			{<br/>
+				background-color : black;<br/>
+			}<br/>
+			ul,ol<br/>
+			{<br/>
+				color : yellow;<br/>
+			}<br/>
+			<br/>
+			class et id sont des attributs de balises seront écrits dans html<br/>
+			<br/>
+			balise div<br/>
+			balise de type block → génère un saut de ligne<br/>
+			span → inline<br/>
+			<br/>
+			balise<br/>
+			{<br/>
+			<br/>
+			}<br/>
+			<br/>
+			pour classe<br/>
+			faire<br/>
+			.nom_class (essayer d'etre parlant dans le nom choisi)<br/>
+			sur html<br/>
+			&lt;balise class= ''nom_classe''...&gt;<br/>
+			<br/>
+			pour id<br/>
+			faire<br/>
+			#nom_id<br/>
+			sur html<br/>
+			&lt;balise id=''nom_id''...&gt;<br/>
+			<br/>
+			html deux chapitres<br/>
+			fond noir<br/>
+			police blanc<br/>
+			couleur fond chapitres, couleur de notre choix<br/>
+			<br/>
+			faire une citation<br/>
+			&lt;blockquote&gt;<br/>
+			<br/>
+			definition<br/>
+			&lt;dl&gt;<br/>
+				&lt;dt&gt;<br/>
+				&lt;dd&gt;<br/>
+			<br/>
+			Les sélecteurs avancés<br/>
+			P,h1,em,class,#id sont les 1ers sélecteurs que l'on a vus.<br/>
+			<br/>
+			*:sélécteur universel<br/>
+			Sélectionne toutes les balises sans exception.<br/>
+			<br/>
+			A B : une balise contenue dans une autre<br/>
+			(Pas de ; entre les 2 balises)<br/>
+			.css<br/>
+			h3 em<br/>
+			{<br/>
+			<br/>
+			}<br/>
+			Signifie sélectionner tous les em compris dans h3.<br/>
+			.html<br/>
+			&lt;h3&gt;Titre avec &lt;em&gt; texte important &lt;/em&gt;&lt;/h3&gt;<br/>
+			<br/>
+			balise a+balise b<br/>
+			<br/>
+			mettre un style à tous les liens qui possèdent un attribut title(infobulle), se fait avec syntaxe:<br/>
+			balise A[attribut]<br/>
+			<br/>
+			balise[attribut]*=<br/>
+			sert à appliquer le style quand l'élément derrière le = est présent dans la valeur, sans pour autant être la valeur entière<br/>
+			<br/>
+			Meilleure manière de sizer une police c'est d'utiliser l'unité em, car elle est plus souple, s'adapte à la taille courante du<br/> navigateur<br/>
+			Il y'a d'autres tailles :<br/>
+			xx-small<br/>
+			x-small<br/>
+			small<br/>
+			medium<br/>
+			large<br/>
+			x-large<br/>
+			xx-large<br/>
+			<br/>
+			font-family : pour définir police du style, il y'a des polices qui ne sont pas présentes sur les postes d'utilisateurs, il y'a une méthode pour faire dl auto à l'utilisateur<br/>
+			On peut préciser différentes polices, on met une virgule, et c'est dans l'ordre de priorité. Si aucune police n'est trouvée ça sera serif par défaut<br/>
+			<br/>
+			Liste des polices présentes sur la majorité des navigateur et postes d'utilisateurs :<br/>
+			Arial,  Arial Black, Comic Sans MS, Courier New, Georgia, Impact, Times New Roman, Trebuchet MS, Verdana<br/>
+			Les noms de polices qui contiennent un espace doivent être entourés par ''<br/>
+			<br/>
+			Police personnalisée avec la directive @font-face, permet d'utiliser n'importe quelle autre police utilisée par le navigateur, le navigateur va dl auto le fichier de la police<br/>
+			Il y'a des sites pour les polices<br/>
+			fontsquirrel.com<br/>
+			dafont.com<br/>
+			(libres de droit)<br/>
+			l'avantage de fontsquirrel c'est qu'il y'a des packs directement prêts à l'emplois pour css3<br/>
+			Il existe plusieurs formats de fichiers de polices<br/>
+			Proposer pour la même police, plusieurs formats<br/>
+			ex :<br/>
+			@font-face[font-family : ''mapolice'';src:url('mapolice.eot') format('eot'),<br/>
+								src:url('mapolice.woff') format('woff'),<br/>
+								src:url('mapolice.ttf') format('truetype');]<br/>
+			dl police, mettre dans dossier prêt du css, prêt à emploi<br/>
+			<br/>
+			gère alignement paragraphe<br/>
+			deuxieme façon : div<br/>
+			<br/>
+			image flottante donc préciser dans css<br/>
+			<br/>
+		</div>
+	</body>
+</html>
